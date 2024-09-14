@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Certificates</title>
+    <!-- Include Swiper.js Library -->
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+    <script src="path/to/swiper.min.js"></script>
+    <style>
+        /* Basic styling for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* Styling for certificate container */
+        .swiper-container {
+            width: 20%;
+            padding: 20px;
+        }
+        /* Styling for each slide */
+        .swiper-slide {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Certificates</h1>
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="Certificate1.png" alt="Certificate 1">
+                <p>Certificate 1 description</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="Certificate1.png" alt="Certificate 2">
+                <p>Certificate 2 description</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="Certificate1.png" alt="Certificate 2">
+                <p>Certificate 2 description</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="Certificate1.png" alt="Certificate 2">
+                <p>Certificate 2 description</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="Certificate1.png" alt="Certificate 2">
+                <p>Certificate 2 description</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="Certificate1.png" alt="Certificate 2">
+                <p>Certificate 2 description</p>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
